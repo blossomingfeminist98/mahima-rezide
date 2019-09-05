@@ -14,6 +14,7 @@ namespace Rezide.Controllers
         {
             return View();
         }
+        
 
         public IActionResult About()
         {
@@ -28,6 +29,12 @@ namespace Rezide.Controllers
 
             return View();
         }
+
+        public IActionResult second_page()
+        {
+            return View();
+        }
+
 
         public IActionResult Privacy()
         {

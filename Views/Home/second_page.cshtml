@@ -1,62 +1,45 @@
 ﻿<!DOCTYPE html>
 
-<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<html lang="en" >
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    @*For the popover*@
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
     <title>Second Page</title>
 </head>
 <style type="text/css">
-    .column-left {
-                float:left;
-                width:20%;
-            }
-    .column-right {
-                float:left;
-                width: 80%;
-                
-            }
     .row:after {
-                content: "";
-                display: table;
-                clear: both;
-            }
-    
- 
-#demoo{
-     width:3.5vw; height:7.5vh; margin-top:5vh;margin-left:1.25vw;margin-right: 1.25vw;
-     background-color: white;
-     border-color:transparent;
-}
- #demo{
-     width:3.5vw; height:7.5vh; margin-top:5vh;margin-left:1.25vw;margin-right: 1.25vw;
-     background-color: white;
-     border-color:transparent;
- }
-    #myimage{
+  content: "";
+  display: table;
+  clear: both;
+}   
+   .column{
+    float:left;     
+   }
+    #blah{
+        position:absolute;
+        z-index:+2;
         
-        animation-play-state: paused;
     }
-     #myimage:hover{
-         width:3.5vw;
-         transition-timing-function: ease-in;
-     }
+   
 </style>
 
 <body>
-    <div class="row" style="height:14.7vh; width:100vw;background-color:#ff0000; opacity: 0.75">
+    <div class="row" style="height:14.7vh; width:100%;background-color:#ff0000; opacity: 0.75">
         <img src="~/images/resideo.png" style=" width:13vw; height:15vh;opacity:1; margin-left:6.1vw;">
-        <img src="~/images/flag.png"style=" width:5vw; height:15vh;opacity:1; margin-left:75vw;">
+        <img src="~/images/flag.png"style=" width:5vw; height:15vh;opacity:1; margin-left:63.7vw;">
         </div>
     <div class="row">
-        <div class="column-left" style="height:73.43vh;background-color:#d8d8d8; opacity:0.76">
+        <div class="column" style="height:73.43vh; width:19.94vw;background-color:#d8d8d8; opacity:0.76">
             <div class="row">
                 <img src="~/images/white_conference.png" style="height:30vh; width:13vw;margin-left:5.25vw">
             </div>
@@ -67,7 +50,7 @@
                 <img src="~/images/white_conference.png" style="height:30vh; width:13vw;margin-left:5.25vw">
             </div> 
         </div>
-        <div class="column-right" style="height: 73.43vh;background-color:#ffffff;">
+        <div class="column" style="height: 73.43vh;width:77.02vw;background-color:#ffffff;">
             <div class="row" style="height:7.37vh">
                 <div class="bs-example">
                     <div id="myModal" class="modal">
@@ -88,92 +71,119 @@
                         </div>
                     </div>
                 </div>
+                
             </div>
             
-            <div class="row" style="height:13vh;">
+            <div class="first_row" style="height:13vh;">
 
                 
-                <a href="#myModal" class="btn btn-lg" data-toggle="modal" style="margin-top:7.8vh;margin-left:11.25vw">
-                    <img id="myimage" src="~/images/Chair.png" style="width:2.5vw; height:4.5vh;transition: width 2s"></a>
-                   <a href="#myModal" class="btn btn-lg" data-toggle="modal" style="margin-top:5.8vh;">
-                    <img src="~/images/Chair.png" style="width:2.5vw; height:4.5vh;"></a>
-                   <a href="#myModal" class="btn btn-lg" data-toggle="modal" style="margin-top:5.8vh;">
-                   <img src="~/images/Chair.png" style="width:2.5vw; height:4.5vh;"></a>
-                   <a href="#myModal" class="btn btn-lg" data-toggle="modal" style="margin-top:5.8vh;">
-                    <img src="~/images/Chair.png" style="width:2.5vw; height:4.5vh;"></a>
-                   <a href="#myModal" class="btn btn-lg" data-toggle="modal" style="margin-top:5.8vh;">
-                   <img src="~/images/Chair.png" style="width:2.5vw; height:4.5vh;"></a>
-                   <a href="#myModal" class="btn btn-lg" data-toggle="modal" style="margin-top:5.8vh;">
-                   <img src="~/images/Chair.png" style="width:2.5vw; height:4.5vh;"></a>
-                   <a href="#myModal" class="btn btn-lg" data-toggle="modal" style="margin-top:5.8vh;">
-                   <img src="~/images/Chair.png" style="width:2.5vw; height:4.5vh;"></a>
-                   <a href="#myModal" class="btn btn-lg" data-toggle="modal"style="margin-top:5.8vh;">
-                   <img src="~/images/Chair.png" style="width:2.5vw; height:4.5vh;"></a>
-                   <a href="#myModal" class="btn btn-lg" data-toggle="modal" style="margin-top:5.8vh;">
-                   <img src="~/images/Chair.png" style="width:2.5vw; height:4.5vh;"></a>
-                   <a href="#myModal" class="btn btn-lg" data-toggle="modal" style="margin-top:5.8vh;">
-                   <img src="~/images/Chair.png" style="width:2.5vw; height:4.5vh;"></a>
-                   <a href="#myModal" class="btn btn-lg" data-toggle="modal" style="margin-top:5.8vh;">
-                   <img src="~/images/Chair.png" style="width:2.5vw; height:4.5vh;"></a>
+                <a href="#myModal" id="s001"  onclick="trigger(this.id)" class="btn btn-lg" data-toggle="modal" style="margin-top:7.3vh;margin-left:10.75vw">
+                    <img src="~/images/Chair.png" style="width:3.1vw; height:3.9vh;"></a>
+                   <a href="#myModal" class="btn btn-lg" data-toggle="modal" style="margin-top:7.3vh;">
+                    <img src="~/images/Chair.png" style="width:3.1vw; height:3.9vh;"></a>
+                   <a href="#myModal" class="btn btn-lg" data-toggle="modal" style="margin-top:7.3vh;">
+                   <img src="~/images/Chair.png" style="width:3.1vw; height:3.9vh;"></a>
+                   <a href="#" role="button" class="btn btn-secondary popover-test" data-trigger="focus" title="Popover title"data-toggle="popover" data-content="Popover body content is set in this attribute." style="margin-top:7.3vh;">
+                    <img src="~/images/Chair.png" style="width:3.1vw; height:3.9vh;"></a>
+                   <a href="#myModal" class="btn btn-lg" data-toggle="modal" style="margin-top:7.3vh;">
+                   <img src="~/images/Chair.png" style="width:3.1vw; height:3.9vh;"></a>
+                   <a href="#myModal" class="btn btn-lg" data-toggle="modal" style="margin-top:7.3vh;">
+                   <img src="~/images/Chair.png" style="width:3.1vw; height:3.9vh;"></a>
+                   <a href="#myModal" class="btn btn-lg" data-toggle="modal" style="margin-top:7.3vh;">
+                   <img src="~/images/Chair.png" style="width:3.1vw; height:3.9vh;"></a>
+                   <a href="#myModal" class="btn btn-lg" data-toggle="modal"style="margin-top:7.3vh;">
+                   <img src="~/images/Chair.png" style="width:3.1vw; height:3.9vh;"></a>
+                   <a href="#myModal" class="btn btn-lg" data-toggle="modal" style="margin-top:7.3vh;">
+                   <img src="~/images/Chair.png" style="width:3.1vw; height:3.9vh;"></a>
+                   
                 </div>
-
                 <div class="row">
-                    <img src="~/images/table.png" style="width:62.37vw; height:6vh;margin-left:9.85vw">
-
+                    <img id="blah" src="~/images/table.png" style="width:61.4vw; height:7.6vh;margin-left:8.3vw">
                 </div>
+               
                 <div class="row" style="height:24.1vh;">
+                    
                     <div class="row" style="height: 11.65vh;">
-                        <a href="#myModal" class="btn btn-lg" data-toggle="modal" style="margin-top:3vh;margin-left:16.25vw;">
-                        <img src="~/images/Chair_rotate.png" style="width:2.5vw; height:4.5vh;" /></a>
-                        <a href="#myModal" class="btn btn-lg" data-toggle="modal" style="margin-top:3vh;">
-                        <img src="~/images/Chair_rotate.png" style="width:2.5vw; height:4.5vh;"></a>
-                        <a href="#myModal" class="btn btn-lg" data-toggle="modal" style="margin-top:3vh;">
-                        <img src="~/images/Chair_rotate.png" style="width:2.5vw; height:4.5vh;"></a>
-                        <a href="#myModal" class="btn btn-lg" data-toggle="modal" style="margin-top:3vh;margin-right:5vw;">
-                        <img src="~/images/Chair_rotate.png" style="width:2.5vw; height:4.5vh;"></a>
-                        <a href="#myModal" class="btn btn-lg" data-toggle="modal" style="margin-top:3vh;">
-                        <img src="~/images/Chair_rotate.png" style="width:2.5vw; height:4.5vh;"></a>
-                        <a href="#myModal" class="btn btn-lg" data-toggle="modal" style="margin-top:3vh;">
-                        <img src="~/images/Chair_rotate.png" style="width:2.5vw; height:4.5vh;" /></a>
-                        <a href="#myModal" class="btn btn-lg" data-toggle="modal" style="margin-top:3vh;">
-                        <img src="~/images/Chair_rotate.png" style="width:2.5vw; height:4.5vh;" /></a> 
-                        <a href="#myModal" class="btn btn-lg" data-toggle="modal" style="margin-top:3vh;">
-                        <img src="~/images/Chair_rotate.png" style="width:2.5vw; height:4.5vh;" /></a>
+                        <a href="#myModal" class="btn btn-lg" data-toggle="modal" style="margin-top:5vh;margin-left:13.25vw;">
+                        <img src="~/images/Chair_rotate.png" style="width:3.1vw; height:3.9vh;" /></a>
+                        <a href="#myModal" class="btn btn-lg" data-toggle="modal" style="margin-top:5vh">
+                        <img src="~/images/Chair_rotate.png" style="width:3.1vw; height:3.9vh;"></a>
+                        <a href="#myModal" class="btn btn-lg" data-toggle="modal" style="margin-top:5vh;">
+                        <img src="~/images/Chair_rotate.png" style="width:3.1vw; height:3.9vh;"></a>
+                        <a href="#myModal" class="btn btn-lg" data-toggle="modal" style="margin-top:5vh;">
+                        <img src="~/images/Chair_rotate.png" style="width:3.1vw; height:3.9vh;"></a>
+                        <a href="#myModal" class="btn btn-lg" data-toggle="modal" style="margin-top:5vh;">
+                        <img src="~/images/Chair_rotate.png" style="width:3.1vw; height:3.9vh;"></a>
+                        <a href="#myModal" class="btn btn-lg" data-toggle="modal" style="margin-top:5vh;">
+                        <img src="~/images/Chair_rotate.png" style="width:3.1vw; height:3.9vh;" /></a>
+                        <a href="#myModal" class="btn btn-lg" data-toggle="modal" style="margin-top:5vh">
+                        <img src="~/images/Chair_rotate.png" style="width:3.1vw; height:3.9vh;" /></a> 
+                        <a href="#myModal" class="btn btn-lg" data-toggle="modal" style="margin-top:5vh;">
+                        <img src="~/images/Chair_rotate.png" style="width:3.1vw; height:3.9vh;" /></a>
+                        <a href="#myModal" class="btn btn-lg" data-toggle="modal" style="margin-top:5vh;">
+                        <img src="~/images/Chair_rotate.png" style="width:3.1vw; height:3.9vh;" /></a>
                         
                     </div>
                     <div class="row" style="height:11.65vh">
-                    <img src="~/images/Chair.png" style="width:2.5vw; height:4.5vh; margin-top:3.5vh;margin-left:13.25vw;margin-right: 1.25vw;">
-                    <img src="~/images/Chair.png" style="width:2.5vw; height:4.5vh; margin-top:3.5vh;margin-left:1.25vw; margin-right: 1.25vw;">
-                    <img src="~/images/Chair.png" style="width:2.5vw; height:4.5vh; margin-top:3.5vh;margin-left:1.25vw;margin-right: 1.25vw;">
-                    <img src="~/images/Chair.png" style="width:2.5vw; height:4.5vh; margin-top:3.5vh;margin-left:1.25vw;margin-right: 1.25vw;">
-                    <img src="~/images/Chair.png" style="width:2.5vw; height:4.5vh; margin-top:3.5vh;margin-left:1.25vw;margin-right: 3vw;">
-                    <img src="~/images/Chair.png" style="width:2.5vw; height:4.5vh; margin-top:3.5vh;margin-left:3vw;margin-right: 1.25vw;">
-                    <img src="~/images/Chair.png" style="width:2.5vw; height:4.5vh; margin-top:3.5vh;margin-left:1.25vw;margin-right: 1.25vw;">
-                    <img src="~/images/Chair.png" style="width:2.5vw; height:4.5vh; margin-top:3.5vh;margin-left:1.25vw;margin-right: 1.25vw;">
-                    <img src="~/images/Chair.png" style="width:2.5vw; height:4.5vh; margin-top:3.5vh;margin-left:1.25vw;margin-right: 1.25vw;">
-                    <img src="~/images/Chair.png" style="width:2.5vw; height:4.5vh; margin-top:3.5vh;margin-left:1.25vw;margin-right: 1.25vw;">
+                    <a href="#myModal" class="btn btn-lg" data-toggle="modal" style="margin-top:6.7vh;margin-left:13.35vw">
+                    <img id="myimage" src="~/images/Chair.png" style="width:3.1vw; height:3.9vh;"></a>
+                   <a href="#myModal" class="btn btn-lg" data-toggle="modal" style="margin-top:6.7vh;">
+                    <img src="~/images/Chair.png" style="width:3.1vw; height:3.9vh;"></a>
+                   <a href="#myModal" class="btn btn-lg" data-toggle="modal" style="margin-top:6.7vh;">
+                   <img src="~/images/Chair.png" style="width:3.1vw; height:3.9vh;"></a>
+                   <a href="#myModal" class="btn btn-lg" data-toggle="modal" style="margin-top:6.7vh;">
+                    <img src="~/images/Chair.png" style="width:3.1vw; height:3.9vh;"></a>
+                   <a href="#myModal" class="btn btn-lg" data-toggle="modal" style="margin-top:6.7vh;">
+                   <img src="~/images/Chair.png" style="width:3.1vw; height:3.9vh;"></a>
+                   <a href="#myModal" class="btn btn-lg" data-toggle="modal" style="margin-top:6.7vh;">
+                   <img src="~/images/Chair.png" style="width:3.1vw; height:3.9vh;"></a>
+                   <a href="#myModal" class="btn btn-lg" data-toggle="modal" style="margin-top:6.7vh;">
+                   <img src="~/images/Chair.png" style="width:3.1vw; height:3.9vh;"></a>
+                   <a href="#myModal" class="btn btn-lg" data-toggle="modal"style="margin-top:6.7vh;">
+                   <img src="~/images/Chair.png" style="width:3.1vw; height:3.9vh;"></a>
+                   <a href="#myModal" class="btn btn-lg" data-toggle="modal" style="margin-top:6.7vh;">
+                   <img src="~/images/Chair.png" style="width:3.1vw; height:3.9vh;"></a>
+                
                         </div>
                 </div>
                 <div class="row">
-                    <img src="~/images/Table.png" style="width:62.37vw; height:4vh; margin-left:9.85vw">
+                    <img id="blah" src="~/images/Table.png" style="width:61.4vw; height:7.67vh; margin-left:8.3vw">
                     <div class="row">
-                    <img src="~/images/Chair_rotate.png" style="width:2.5vw; height:4.5vh; margin-top:3vh;margin-left:13.25vw;margin-right: 1.25vw;">
-                    <img src="~/images/Chair_rotate.png" style="width:2.5vw; height:4.5vh; margin-top:3vh;margin-left:1.25vw;margin-right: 1.25vw;">
-                    <img src="~/images/Chair_rotate.png" style="width:2.5vw; height:4.5vh; margin-top:3vh;margin-left:1.25vw;margin-right: 1.25vw;">
-                    <img src="~/images/Chair_rotate.png" style="width:2.5vw; height:4.5vh; margin-top:3vh;margin-left:1.25vw;margin-right: 1.25vw;">
-                    <img src="~/images/Chair_rotate.png" style="width:2.5vw; height:4.5vh; margin-top:3vh;margin-left:1.25vw;margin-right: 3vw;">
-                    <img src="~/images/Chair_rotate.png" style="width:2.5vw; height:4.5vh; margin-top:3vh;margin-left:3vw;margin-right: 1.25vw;">
-                    <img src="~/images/Chair_rotate.png" style="width:2.5vw; height:4.5vh; margin-top:3vh;margin-left:1.25vw;margin-right: 1.25vw;">
-                    <img src="~/images/Chair_rotate.png" style="width:2.5vw; height:4.5vh; margin-top:3vh;margin-left:1.25vw;margin-right: 1.25vw;">
-                    <img src="~/images/Chair_rotate.png" style="width:2.5vw; height:4.5vh; margin-top:3vh;margin-left:1.25vw;margin-right: 1.25vw;">
-                    <img src="~/images/Chair_rotate.png" style="width:2.5vw; height:4.5vh; margin-top:3vh;margin-left:1.25vw;margin-right: 1.25vw;">
-                    </div>
+                    <a href="#myModal" class="btn btn-lg" data-toggle="modal" style="margin-top:5vh;margin-left:13.25vw;">
+                        <img src="~/images/Chair_rotate.png" style="width:3.1vw; height:3.9vh;" /></a>
+                        <a href="#myModal" class="btn btn-lg" data-toggle="modal" style="margin-top:5vh">
+                        <img src="~/images/Chair_rotate.png" style="width:3.1vw; height:3.9vh;"></a>
+                        <a href="#myModal" class="btn btn-lg" data-toggle="modal" style="margin-top:5vh;">
+                        <img src="~/images/Chair_rotate.png" style="width:3.1vw; height:3.9vh;"></a>
+                        <a href="#myModal" class="btn btn-lg" data-toggle="modal" style="margin-top:5vh;">
+                        <img src="~/images/Chair_rotate.png" style="width:3.1vw; height:3.9vh;"></a>
+                        <a href="#myModal" class="btn btn-lg" data-toggle="modal" style="margin-top:5vh;">
+                        <img src="~/images/Chair_rotate.png" style="width:3.1vw; height:3.9vh;"></a>
+                        <a href="#myModal" class="btn btn-lg" data-toggle="modal" style="margin-top:5vh;">
+                        <img src="~/images/Chair_rotate.png" style="width:3.1vw; height:3.9vh;" /></a>
+                        <a href="#myModal" class="btn btn-lg" data-toggle="modal" style="margin-top:5vh">
+                        <img src="~/images/Chair_rotate.png" style="width:3.1vw; height:3.9vh;" /></a> 
+                        <a href="#myModal" class="btn btn-lg" data-toggle="modal" style="margin-top:5vh;">
+                        <img src="~/images/Chair_rotate.png" style="width:3.1vw; height:3.9vh;" /></a>
+                        <a href="#myModal" class="btn btn-lg" data-toggle="modal" style="margin-top:5vh;">
+                        <img src="~/images/Chair_rotate.png" style="width:3.1vw; height:3.9vh;" /></a>
+                         </div>
                 </div>
+            <div class="row">
+                <img src="~/images/Group 18.png" style="margin-left:70vw;width:5vw; height:14.3vh;">
+            </div>
             </div>
     </div>
+    <div class="row" style="background-color:#484848; width:100%; height:11.87vh;">
+    </div>
     <script type="text/javascript">
-       
-
+       $(document).ready(function(){
+        $('[data-toggle="popover"]').popover();   
+       });
+        function trigger(id) {
+            alert(id);
+        }
+        
        
     
     </script>
